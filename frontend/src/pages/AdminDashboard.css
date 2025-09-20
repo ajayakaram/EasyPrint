@@ -1,0 +1,106 @@
+/* AdminDashboard.css */
+
+/* Base dark theme */
+body {
+  background-color: #1e1f24;
+  color: #e4e4e7;
+  font-family: "Inter", system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.admin-dashboard {
+  width: 95%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 30px;
+  box-sizing: border-box;
+
+  /* Important for scrolling */
+  min-height: 100vh;       /* at least full viewport */
+  overflow-y: auto;        /* allow vertical scrolling */
+  overflow-x: auto;
+}
+
+.admin-dashboard h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #f5f5f5;
+}
+
+/* Table styling */
+.admin-dashboard table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #2a2b32;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.admin-dashboard th,
+.admin-dashboard td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #3a3b42;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.admin-dashboard th {
+  background-color: #32333a;
+  font-weight: 600;
+  color: #e4e4e7;
+}
+
+.admin-dashboard tr:hover td {
+  background-color: #383a40;
+}
+
+/* Buttons */
+.admin-dashboard button {
+  margin-right: 8px;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.admin-dashboard button:first-of-type {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.admin-dashboard button:first-of-type:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.admin-dashboard button:last-of-type {
+  background: #ff4d4d;       /* deep red */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(255, 77, 77, 0.4);
+}
+
+.admin-dashboard button:last-of-type:hover {
+  background: #ff1a1a;       /* brighter red on hover */
+  box-shadow: 0 6px 12px rgba(255, 26, 26, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Messages */
+.admin-dashboard p {
+  margin-bottom: 15px;
+  color: #a1a1aa;
+  font-size: 0.9rem;
+}
+

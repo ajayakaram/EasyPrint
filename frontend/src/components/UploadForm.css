@@ -1,0 +1,100 @@
+.upload-form {
+  max-width: 450px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05); /* glass effect */
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  color: #e0e0e0;
+    box-sizing: border-box;   /* include padding in width */
+  overflow-x: hidden; 
+}
+
+.upload-form h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(16, 163, 127, 0.4);
+}
+
+.upload-form input[type="file"] {
+  overflow: hidden;
+  padding-right: 5%;
+  display: block;
+  margin: 15px auto;
+  padding: 10px;
+  color: #cfcfcf;
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.upload-form input[type="file"]::-webkit-file-upload-button {
+  padding: 8px 14px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #10a37f;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.upload-form input[type="file"]::-webkit-file-upload-button:hover {
+  background-color: #00d9a6;
+}
+
+.upload-form input[type="text"],
+.upload-form select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  font-size: 1rem;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.upload-form input:focus,
+.upload-form select:focus {
+  outline: none;
+  border: 1px solid #10a37f;
+  box-shadow: 0 0 8px rgba(16, 163, 127, 0.6);
+}
+
+.upload-form button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #10a37f;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.upload-form button:hover {
+  background-color: #00d9a6;
+  box-shadow: 0 0 12px rgba(16, 163, 127, 0.6);
+}
+
+.upload-form .message {
+  margin-top: 15px;
+  font-size: 0.95rem;
+  color: #cfcfcf;
+}
+.upload-form .Reference-name{
+    padding: 5px;
+}
